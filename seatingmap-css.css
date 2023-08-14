@@ -1,0 +1,319 @@
+body {
+  background-color:transparent;
+}
+#MapChartHolder{  
+    margin-top: 20px;
+  }
+  
+  #MapCanvasWrapper{
+    width:50%;
+    min-height: 50px;
+    float:left;
+    position:relative;
+  
+     -webkit-touch-callout: none; 
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none; 
+  
+               transition: 0.1s ease all;
+    -webkit-transition: 0.1s ease all;
+  }
+  
+  .panel {
+    background-color: transparent;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border: 1px solid #ffffff;
+  outline: none;
+  transition: 0.4s !important;
+}
+.accordion:after {
+  margin-top:-30px;
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #101f3f !important;
+  float:right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+  
+  #MapCanvasWrapper .detailedImg{
+    width: 100%;
+    float: left;
+    pointer-events: none;
+    position: absolute;
+    height: auto;
+    z-index: 1000;
+    opacity: 1;
+    transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  #MapCanvasWrapper .detailedImg.faded{
+    opacity: 0.3;
+  }
+  
+  #MapCanvasWrapper .mapNumbers{
+    width: 100%;
+    float: left;
+    position: absolute;
+    height: auto;
+    z-index: 10000;
+    opacity: 1;
+  }
+  
+  #MapCanvasWrapper canvas{
+    float:left;
+    position:absolute;
+    top:0px;
+    opacity:0;
+    cursor:pointer;
+  }
+  
+  #MapCanvasWrapper img{
+    width:100%;
+    pointer-events:none;
+      height:100%;
+    position:absolute;
+    top:0;
+  }
+  
+  
+  .MapSectionInfo{
+    width:46%;
+    margin: 0px 2% 0px 2%;
+    float: right;
+    margin: 0px;  
+    position: relative;
+  }
+  
+  .MapSectionInfo h2{
+    width: 100%;
+    text-align: left;
+    padding: 5px 10px 5px 10px;
+    margin: 0px;
+    color: #ffffff;
+    font-size: 16pt;
+    background-color: transparent;
+    font-family: Rift;
+    letter-spacing: 2px;
+  }
+  
+  
+  .MapSectionInfo ._fullSeason{
+    display: block;
+  }
+  .MapSectionInfo ._halfSeason, .MapSectionInfo{
+    /* display: none; */
+  }
+  
+  .MapSectionInfo .section{
+    float: left;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  
+  
+  .MapSectionInfo .section:hover{
+    background-color: #aa0126;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  
+  
+  .MapSectionInfo div.open{
+    display: block;
+  }
+  
+  .section_color {
+    width:7% !important;;
+  }
+  
+  .MapSectionInfo div h1{
+    width: 68%;
+    float: left;
+    text-align: center;
+    font-size: 12pt;
+    margin: 0px;
+    letter-spacing: 1px;
+    padding: 5px;
+    position: relative;
+    color: #fff;
+    font-weight: bold;
+    font-family: Rift;
+  }
+  
+  .MapSectionInfo div p{
+    width: 25%;
+    float: left;
+    text-align: left;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    margin: 0px;
+    text-align: center ;
+    font-weight: 200;
+    padding: 5px 5px 5px 5px;
+    font-family: Rift;
+    color:#fff;
+  }
+  
+  .MapSectionInfo div p:nth-child(odd){
+    background-color: transparent;
+  }
+  .MapSectionInfo div p span{
+    float: right;
+    text-align: right;
+  }
+  .MapSectionInfo div p span{
+    float: left;
+    width: 50%;
+    text-align:center;
+  }
+  
+  .MapSectionInfo div img{
+   position: relative;
+   width: 100%;
+   float: left;
+   height: auto;
+   margin-bottom: 5px;
+  }
+  .MapSectionInfo div a{
+    width: 150px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    font-size: 12pt;
+    margin: 10px 0px 15px 0px;
+    font-family: Rift;
+    border: 1px solid #fff;
+    padding: 5px 0px 5px 0px;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+    background-color: rgba(255,255,255,1);
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, white 50% , black 50%);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    clear: both;
+    color: #000;
+    text-decoration: none;
+  }
+  .MapSectionInfo div a:hover{
+    color: #fff;
+    background-position: -100% 0;
+  }
+  .MapSectionInfo div hr{
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 1px;
+    border: 0px;
+  }
+  
+  .MapSectionInfo h3{
+    width: 100%;
+    /*margin: 0px 2% 0px 2%;*/
+    margin: 0px;
+    color: #fff;
+    font-size: 14pt;
+    background-color: #c8102e;
+    font-family: Rift;
+    font-weight: bold;
+    font-size: 14pt;
+    padding: 10px;
+    float: left;
+    letter-spacing: 2px;
+    text-transform: none;
+  }
+  .MapSectionInfo h3 span{
+    float: left;
+    text-align: center !important;
+  }
+  .MapSectionInfo h3 span em{
+    font-size: 8pt;
+  }
+  .MapSectionInfo h3 span:nth-child(1){
+    width: 60%;
+  }
+  .MapSectionInfo h3 span:nth-child(2){
+    width: 20%;
+  }
+  
+  .MapSectionInfo h3 span:nth-child(3){
+    width: 20%;
+  }
+  .MapSectionInfo h3 span:nth-child(4){
+    width: 20%;
+  }
+
+  @media screen and (min-width: 701px)(max-width:800px;){
+  .MapSectionInfo{
+    width:100%;
+    top:50%;
+    display:block;
+    float:left;
+  }
+  #MapCanvasWrapper{
+    width: 80%;
+    display: block;
+    top: 0px;
+    left:10%;
+  }
+
+}
+  @media screen and (max-width: 700px){
+  #MapChartHolder{  
+    margin-top: 0px;
+  }
+
+  .Third{
+    width:100%;
+    display:block;
+    float:left;
+  }
+  .mainSection {
+    padding: 5px 0px 20px 0px;
+}
+    #MapCanvasWrapper{
+      width: 100%;
+      display: block;
+        top: 0px;
+        left:0%;
+    }
+    .MapSectionInfo{
+      width:100%;
+      top:350px !important;
+      display:block;
+      float:left;
+    }
+  }
+
+  /*MapSectionThird*/
+
+  .Third{
+    width:29%;
+    margin: 0px 2% 0px 2%;
+    float: left;
+    position: relative;
+  }
