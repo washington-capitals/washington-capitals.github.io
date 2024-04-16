@@ -6,116 +6,51 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Washington Capitals Seating Chart</title>
+    <title>Club Red 365</title>
 
     <script>
         window.iFrameResizer = {
-            heightCalculationMethod: 'lowestElement'
+          heightCalculationMethod: 'lowestElement'
         }
     </script>
 
     <!-- Style-->
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
     <script src="https://use.typekit.net/ote6pql.js"></script>
-    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
-    <link rel="stylesheet" type="text/css"
-        href="https://snagfilms-a.akamaihd.net/90/2b/d53b132643a9b3757640c83c82a8/masterstyle-css.css">
-    <link type="text/css" rel="stylesheet"
-        href="https://snagfilms-a.akamaihd.net/c0/7b/6fd1ed174ac88a1c699522b92456/seatingmap-css.css">
-    <script
-        src="https://s3.amazonaws.com/fed-nhl-microsites/prod/vendor/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" type="text/css" href="https://snagfilms-a.akamaihd.net/90/2b/d53b132643a9b3757640c83c82a8/masterstyle-css.css">
+    <link type="text/css" rel="stylesheet" href="https://snagfilms-a.akamaihd.net/c0/7b/6fd1ed174ac88a1c699522b92456/seatingmap-css.css">
+    <script src="https://s3.amazonaws.com/fed-nhl-microsites/prod/vendor/iframe-resizer/js/iframeResizer.contentWindow.min.js"></script>
 
-</head>
-
-<style type="text/css">
-    body {
-        background-color: transparent;
-    }
-
-    .section_color {
-        width: 7% !important;
-    }
-
-    .MapSectionInfo div p span {
-        float: left;
-        width: 25% !important;
-        text-align: center;
-    }
-
-    .MapSectionInfo div p {
-        width: 50%;
-        float: left;
-        text-align: left;
-        font-size: 12pt;
-        letter-spacing: 1px;
-        margin: 0px;
-        text-align: center;
-        font-weight: 200;
-        padding: 5px 5px 5px 5px;
-        font-family: Rift;
-        color: #fff;
-    }
-
-    .MapSectionInfo div h1 {
-        width: 43% !important;
-        float: left;
-        text-align: center;
-        font-size: 10pt;
-        margin: 0px;
-        letter-spacing: 1px;
-        padding: 5px;
-        position: relative;
-        color: #fff;
-        font-weight: bold;
-        font-family: Rift;
-    }
-</style>
+ </head>
 
 <body>
 
-    <div class="mainSection">
+<div class="mainSection">
+	
+  <div class="contentArea" id="MapChartHolder">
 
-        <div class="contentArea" id="MapChartHolder">
-
-            <div id="MapCanvasWrapper">
-                <img class="detailedImg" id="map_base"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517380/1000x906/cut.png">
-                <img class="detailedImg" id="map_VIP"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517510/1000x906/cut.png">
-                <img class="detailedImg" id="map_CenterCenter"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517484/1000x906/cut.png">
-                <img class="detailedImg" id="map_CenterAttack"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517382/1000x906/cut.png">
-                <img class="detailedImg" id="map_CenterDefend"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517486/1000x906/cut.png">
-                <img class="detailedImg" id="map_LowerAttack"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517494/1000x906/cut.png">
-                <img class="detailedImg" id="map_LowerDefend"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517496/1000x906/cut.png">
-                <img class="detailedImg" id="map_LogeAttack"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517488/1000x906/cut.png">
-                <img class="detailedImg" id="map_LogeDefend"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517490/1000x906/cut.png">
-                <img class="detailedImg" id="map_ClubCenter"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517372/1000x906/cut.png">
-                <img class="detailedImg" id="map_ClubAttack"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517370/1000x906/cut.png">
-                <img class="detailedImg" id="map_ClubDefend"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517376/1000x906/cut.png">
-                <img class="detailedImg" id="map_MezzCenter"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517498/1000x906/cut.png">
-                <img class="detailedImg" id="map_MezzEndAttack"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517504/1000x906/cut.png">
-                <img class="detailedImg" id="map_MezzEndDefend"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517506/1000x906/cut.png">
-                <img class="detailedImg" id="map_MezzCornerAttack"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517500/1000x906/cut.png">
-                <img class="detailedImg" id="map_MezzCornerDefend"
-                    src="https://cms.nhl.bamgrid.com/images/photos/295517502/1000x906/cut.png">
-                <img class="detailedImg" id="map_UltraClub"
-                    src="https://cms.nhl.bamgrid.com/images/photos/314909184/1000x906/cut.png">
-            </div>
+    <div id="MapCanvasWrapper">
+      <img class="detailedImg" id="map_base" src="https://media.d3.nhle.com/image/private/t_document/prd/m36bdrnvfnqpximcmqz8.png">
+      <img class="detailedImg" id="map_VIP" src=https://media.d3.nhle.com/image/private/t_document/prd/xgnrxtunmapr6jpug5z5.png">
+      <img class="detailedImg" id="map_CenterCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/k9s4q6cqojh64ijcltme.png">
+      <img class="detailedImg" id="map_CenterAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/v53oqrfobrtcvymaku0e.png">
+      <img class="detailedImg" id="map_CenterDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/n49npotm6uxuy3biylvl.png">
+      <img class="detailedImg" id="map_LowerAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/klccidbhl43hqryviepb.png">
+      <img class="detailedImg" id="map_LowerDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/yu8kzqqzktzanyszzcls.png">
+      <img class="detailedImg" id="map_LogeAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/wjcrjbe7zhakij0jqnjl.png">
+      <img class="detailedImg" id="map_LogeDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/yu8kzqqzktzanyszzcls.png">
+      <img class="detailedImg" id="map_ClubCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/udzbt4k7bjbgvdhett9k.png">
+      <img class="detailedImg" id="map_ClubAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/sejkgl9rc8qe1vi8mm31.png">
+      <img class="detailedImg" id="map_ClubDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/mxda0efzyzrf6sbulfnl.png">
+      <img class="detailedImg" id="map_MezzCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/gid75ikdfg1hscyqljhf.png">
+      <img class="detailedImg" id="map_MezzEndAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/wdmb9xlqnm40wkg1thzh.png">
+      <img class="detailedImg" id="map_MezzEndDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/omccitq3jlmddosnylcd.png">
+      <img class="detailedImg" id="map_MezzCornerAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/tggevhcearltuvnxtjmn.png">
+      <img class="detailedImg" id="map_MezzCornerDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/dtnyxp4smfz3cfivdcd9.png">
+      <img class="detailedImg" id="map_UltraClub" src="https://media.d3.nhle.com/image/private/t_document/prd/luiiyjwgbn5wqhe9eujy.png">
+    </div>
 
             <div class="MapSectionInfo">
                 <h3>Select A Tier:</h3>
