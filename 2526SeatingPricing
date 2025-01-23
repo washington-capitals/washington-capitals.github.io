@@ -31,24 +31,25 @@
   <div class="contentArea" id="MapChartHolder">
 
     <div id="MapCanvasWrapper">
-      <img class="detailedImg" id="map_base" src="https://media.d3.nhle.com/image/private/t_document/prd/m36bdrnvfnqpximcmqz8.png">
-      <img class="detailedImg" id="map_VIP" src="https://media.d3.nhle.com/image/private/t_document/prd/qk0jvhviwgpppb8zzlz2.png">
-      <img class="detailedImg" id="map_CenterCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/x6guvnzr1mu7jnu8bodd.png">
-      <img class="detailedImg" id="map_CenterAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/znxboyj238sjhc9ft5ff.png">
-      <img class="detailedImg" id="map_CenterDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/a2hatay6yywv4abpkwvf.png">
-      <img class="detailedImg" id="map_LowerAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/xblb3hpahq3ym6ztmpjc.png">
-      <img class="detailedImg" id="map_LowerDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/kjto67eb9wxabot8jstx.png">
-      <img class="detailedImg" id="map_LogeAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/vn2qhwjxecsbxkjiujea.png">
-      <img class="detailedImg" id="map_LogeDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/lk4mhxbqqqoqt6sfr7yq.png">
-      <img class="detailedImg" id="map_200Center" src="https://media.d3.nhle.com/image/private/t_document/prd/pjaewtb7uneif1ckebp7.png">
-      <img class="detailedImg" id="map_200Attack" src="https://media.d3.nhle.com/image/private/t_document/prd/dctgpxtpsimgk3tdq921.png">
-      <img class="detailedImg" id="map_200Defend" src="https://media.d3.nhle.com/image/private/t_document/prd/prpk4orom3laesdzwvmh.png">
-      <img class="detailedImg" id="map_MezzCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/b3qmukazgq7vfurlai1s.png">
-      <img class="detailedImg" id="map_MezzEndAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/uzkq5d7wvkpqekdbcghk.png">
-      <img class="detailedImg" id="map_MezzEndDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/myj7norg1wgp3rctzubz.png">
-      <img class="detailedImg" id="map_MezzCornerAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/dfbvn1lvnuej62qkl3im.png">
-      <img class="detailedImg" id="map_MezzCornerDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/yzf2bzsx1ffzk1dxslyb.png">
-      <img class="detailedImg" id="map_UltraClub" src="https://media.d3.nhle.com/image/private/t_document/prd/okspzgzkyths6065nedb.png">
+      <img class="detailedImg" id="map_base" src="https://media.d3.nhle.com/image/private/t_document/prd/nu5txh9lf6utcroemfkr.png">
+      <img class="detailedImg" id="map_VIPA" src="https://media.d3.nhle.com/image/private/t_document/prd/nfr1w27lpoedopwcadx4.png">
+      <img class="detailedImg" id="map_VIPB" src="https://media.d3.nhle.com/image/private/t_document/prd/hbygb9brsnzj6krwhcwn.png">
+      <img class="detailedImg" id="map_VIPC" src="https://media.d3.nhle.com/image/private/t_document/prd/rgdfclwcqkat9ttpdwjd.png">
+      <img class="detailedImg" id="map_VIPDH" src="https://media.d3.nhle.com/image/private/t_document/prd/d6wgwtuheyymjelukbap.png">
+      <img class="detailedImg" id="map_CenterCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/eutufyye28cddn64wmpi.png">
+      <img class="detailedImg" id="map_CenterAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/vpbrcp3vrxkthmocvnyd.png">
+      <img class="detailedImg" id="map_CenterDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/mp31yqm8bopiaexyy7zb.png">
+      <img class="detailedImg" id="map_LowerAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/ljllabiksgez1t5viizs.png">
+      <img class="detailedImg" id="map_LowerDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/wxifusm0sbkoirgvmkzt.png">
+      <img class="detailedImg" id="map_LogeAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/deodokgnyqt14zylx37p.png">
+      <img class="detailedImg" id="map_LogeDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/qfg9v9gx8cvci0ugd6zl.png">
+      <img class="detailedImg" id="map_200Center" src="https://media.d3.nhle.com/image/private/t_document/prd/lpxaybnzqdachfca2ob5.png">
+      <img class="detailedImg" id="map_200Attack" src="https://media.d3.nhle.com/image/private/t_document/prd/ariuvdximdjqcleqbhwv.png">
+      <img class="detailedImg" id="map_200Defend" src="https://media.d3.nhle.com/image/private/t_document/prd/qsqx8wc3v8kejal0mcp0.png">
+      <img class="detailedImg" id="map_MezzCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/btwremvdzfgvwcxkcilm.png">
+      <img class="detailedImg" id="map_MezzEndAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/wkivujsm6pvx0ori5oc3.png">
+      <img class="detailedImg" id="map_MezzEndDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/qdondhdyuuhccjk7uvqe.png">
+      <img class="detailedImg" id="map_UltraClub" src="https://media.d3.nhle.com/image/private/t_document/prd/wtbliis2nns8dg2bsc15.png">
     </div>
 
       <div class="MapSectionInfo">
@@ -69,7 +70,7 @@
               <span class="_halfSeason">$739</span>
             </p>         
         </div>
-        <div id="VIP" class="section">
+        <div id="VIPB" class="section">
           <p class="section_color" style="background-color: #fece02;">&nbsp;</p>
           <h1>VIP B</h1>
             <p>
@@ -77,7 +78,7 @@
               <span class="_halfSeason">$468</span>
             </p>         
         </div>
-        <div id="VIP" class="section">
+        <div id="VIPC" class="section">
           <p class="section_color" style="background-color: #fece02;">&nbsp;</p>
           <h1>VIP C</h1>
             <p>
@@ -85,6 +86,19 @@
               <span class="_halfSeason">$400</span>
             </p>         
         </div>
+<div id="VIPDH" class="section">
+          <p class="section_color" style="background-color: #fece02;">&nbsp;</p>
+          <h1>VIP D-H</h1>
+            <p>
+              <span class="_fullSeason">$365</span>
+              <span class="_halfSeason">$400</span>
+            </p>         
+        </div>
+
+
+
+
+
         <div id="UltraClub" class="section">
           <p class="section_color" style="background-color: #000000;">&nbsp;</p>
           <h1>Ultra Club - Rows 1 - 4</h1>
@@ -340,56 +354,6 @@
             <p>
               <span class="_fullSeason">$49</span>
               <span class="_halfSeason">$59</span>
-            </p>         
-        </div>
-
-        <div id="MezzCornerAttack" class="section">
-            <p class="section_color" style="background-color: #c7cf21;">&nbsp;</p>
-          <h1>Mezzanine Corner: Attack - Front (A-H)</h1>
-            <p>
-              <span class="_fullSeason">$64</span>
-              <span class="_halfSeason">$76</span>
-            </p>         
-        </div>
-        <div id="MezzCornerAttack" class="section">
-            <p class="section_color" style="background-color: #a7af1b;">&nbsp;</p>
-          <h1>Mezzanine Corner: Attack - Mid (J-M)</h1>
-            <p>
-              <span class="_fullSeason">$59</span>
-              <span class="_halfSeason">$68</span>
-            </p>         
-        </div>
-        <div id="MezzCornerAttack" class="section">
-            <p class="section_color" style="background-color: #858f12;">&nbsp;</p>
-          <h1>Mezzanine Corner: Attack - Back (N-Q)</h1>
-            <p>
-              <span class="_fullSeason">$52</span>
-              <span class="_halfSeason">$60</span>
-            </p>         
-        </div>
-
-        <div id="MezzCornerDefend" class="section">
-            <p class="section_color" style="background-color: #78c1ae;">&nbsp;</p>
-          <h1>Mezzanine Corner: Defend - Front (A-H)</h1>
-            <p>
-              <span class="_fullSeason">$60</span>
-              <span class="_halfSeason">$71</span>
-            </p>         
-        </div>
-        <div id="MezzCornerDefend" class="section">
-            <p class="section_color" style="background-color: #619f90;">&nbsp;</p>
-          <h1>Mezzanine Corner: Defend - Mid (J-M)</h1>
-            <p>
-              <span class="_fullSeason">$54</span>
-              <span class="_halfSeason">$62</span>
-            </p>         
-        </div>
-        <div id="MezzCornerDefend" class="section">
-            <p class="section_color" style="background-color: #497f72;">&nbsp;</p>
-          <h1>Mezzanine Corner: Defend - Back (N-Q)</h1>
-            <p>
-              <span class="_fullSeason">$49</span>
-              <span class="_halfSeason">$56</span>
             </p>         
         </div>
         
