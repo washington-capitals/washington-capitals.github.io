@@ -11,6 +11,10 @@ img.vip {
   z-index: 2 !important;
 }
 
+li {
+    list-style-type: disc!important;
+}
+
 .vip-column {
   float: left;
   width: 33%;
