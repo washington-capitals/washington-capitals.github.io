@@ -321,6 +321,62 @@ picture.vjs-poster img {
   z-index: 0 !important;
 }
 
+/*GLOBE CLUB & LOUNGE*/
+.half-column h4 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.carousel h4 {
+  color: #e0e0e0;
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-weight: 800;
+  font-size: 2.75rem;
+}
+
+.carousel b {
+  font-weight: 800;
+}
+
+.row.vip p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 4%;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.club {
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/g750vrcrv0seupbnnmrm.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #041e42;
+}
+
+.club p {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.club h4 {
+  color: #c8102e;
+}
+
+.lounge {
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/iydehjreqaxg4y5rmdon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff !important;
+}
+
+.lounge h4 {
+  color: #e0e0e0;
+}
+
+.lounge p {
+  background-color: rgba(4, 30, 66, 0.5);
+}
+
+
 /*countdown clock*/
 
 body {
