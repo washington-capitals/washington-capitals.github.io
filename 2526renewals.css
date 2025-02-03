@@ -511,7 +511,7 @@ h2 {
   color: #fff;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 90%;
   border: none;
   text-align: left;
   outline: none;
@@ -519,6 +519,7 @@ h2 {
   transition: 0.4s;
   font-weight: bold;
   margin-bottom: 7px;
+  margin-top:7px;
   border-radius: 5px;
 }
 
