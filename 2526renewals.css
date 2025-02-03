@@ -1,7 +1,12 @@
-p {
-    margin: 5% !important;
+.additional-content.front p,
+h4 {
+  margin: 5%;
 }
 
+p.statement {
+  font-size: 1.5rem;
+  text-align: justify;
+}
 .seatmap {
   width: 100%;
 }
@@ -11,12 +16,13 @@ p {
     aspect-ratio: 1/2 !important;
   }
 }
+
 img.vip {
   z-index: 2 !important;
 }
 
 li {
-    list-style-type: disc!important;
+  list-style-type: disc !important;
 }
 
 .vip-column {
@@ -31,7 +37,6 @@ li {
 .half-column {
   float: left;
   width: 50%;
-  padding: 15px;
   font-weight: 300;
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-size: 1.75rem;
@@ -41,7 +46,7 @@ li {
 .benefits-column {
   float: left;
   width: 25%;
-  padding: 15px;
+  padding: 3%;
   font-weight: bold;
   font-family: "refrigerator-deluxe", sans-serif;
   font-size: 2.5rem;
@@ -86,6 +91,7 @@ li {
 
 .benefits.row {
   width: 100%;
+  margin: 0;
 }
 
 /*carousel*/
@@ -138,7 +144,7 @@ li {
   max-height: 300px;
 }
 
-.carousel-caption h3,
+.carousel-caption,
 .carousel-caption p {
   color: #fff;
 }
@@ -200,12 +206,11 @@ li {
 
 .additional-content {
   background-color: white;
-  padding: 20px 5% 20px 5%;
   font-size: 20px;
   font-weight: 500;
   font-family: "neue-haas-grotesk-display", sans-serif;
   color: #041e42;
-  text-align:center;
+  text-align: center;
 }
 
 .additional-content.renew {
@@ -217,6 +222,21 @@ li {
     font-size: 40px;
     font-weight: 800;
   }
+  h3 {
+    background-color: #041e42;
+    color: #ffffff;
+    padding: 4px 5%;
+    font-size: 4rem;
+  }
+}
+
+.additional-content.benefits {
+  h3 {
+    background-color: #041e42;
+    color: #ffffff;
+    padding: 4px 5%;
+    font-size: 4rem;
+  }
 }
 .additional-content h2 {
   font-size: 3rem;
@@ -225,25 +245,23 @@ li {
 }
 
 .additional-content h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   font-weight: 800;
   font-family: "refrigerator-deluxe", sans-serif;
   background-image: url(https://media.d3.nhle.com/image/private/t_document/prd/lbvtjx7lphktathqrrlh.png);
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: 95%;
   background-size: contain;
-  background-color: #041e42;
   padding: 11px;
-  color: #ffffff;
+  color: #c8102e;
   text-align: left;
-  letter-spacing: 0.5rem;
+  margin: 0;
 }
 
 @media (max-width: 800px) {
   .additional-content h3 {
     background-image: none;
-    background-color: #041e42;
     border-bottom: 15px double #c8102e;
   }
 }
@@ -327,33 +345,32 @@ picture.vjs-poster img {
 
 /*GLOBE CLUB & LOUNGE*/
 
-
 .half-column h4 {
   font-weight: 700;
   font-size: 2rem;
-}
-
-.carousel h4 {
-  color: #e0e0e0;
-  font-family: "refrigerator-deluxe", sans-serif;
-  font-weight: 800;
-  font-size: 2.75rem;
 }
 
 .carousel b {
   font-weight: 800;
 }
 
-.row.vip p {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  padding: 4%;
-  text-align: left;
-  letter-spacing: 1px;
+.row.vip {
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 4% 10%;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+  h4 {
+    font-family: refrigerator-deluxe, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 15px;
+  }
 }
-
 .club {
-  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/g750vrcrv0seupbnnmrm.png");
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/jq6jzcm3l0wc75aijf0l.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: #041e42;
@@ -364,7 +381,7 @@ picture.vjs-poster img {
 }
 
 .lounge {
-  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/iydehjreqaxg4y5rmdon.png");
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/xk1bu2qiqzesojctmkbd.png");
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff !important;
@@ -373,8 +390,6 @@ picture.vjs-poster img {
 .lounge h4 {
   color: #e0e0e0;
 }
-
-
 
 /*countdown clock*/
 
