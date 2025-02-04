@@ -1,19 +1,4 @@
-#scrollTop{
-    display:none;
-    font-size:3rem;
-    top:0;
-width:100%;;
-    position: fixed;
-    cursor: pointer;
-    transition: 0.1s;
-    z-index:1000;
-  text-align:center;
-}
-#scrollTop:hover{
-text-transform:underline;
-  color:#ffffff;
-font-weight:900;
-}
+
 
 .slide-container.vidembed:before {
   max-width: 1284px;
