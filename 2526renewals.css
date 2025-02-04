@@ -1,4 +1,24 @@
+#scrollTop {
+  display: none;
+  font-size: 3rem;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  position: fixed;
+  cursor: pointer;
+  transition: 0.1s;
+  z-index: 1000;
+  text-align: center;
+}
 
+#scrollTop:hover {
+  text-transform: underline;
+  font-weight: 900;
+}
+
+.slide-container.vidembed.globe:before {
+background-image:none;
+}
 
 .slide-container.vidembed:before {
   max-width: 1284px;
@@ -9,19 +29,22 @@
     to bottom,
     rgba(0, 0, 0, 9),
     rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.0)
+    rgba(0, 0, 0, 0)
   );
   background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/iydehjreqaxg4y5rmdon.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
-  z-index:5;
-  aspect-ratio:16/9;
-} 
+  z-index: 5;
+  aspect-ratio: 16/9;
+}
 
 .slide-container.vidembed {
+  position: relative;
   max-height: fit-content;
   min-height: min-content;
+  aspect-ratio: 16/9;
+  overflow: hidden;
 }
 
 .additional-content.front p,
@@ -533,20 +556,19 @@ h2 {
 
 /*accordion*/
 .accordion {
-    background-color: #041e42;
-    color: #fff;
-    cursor: pointer;
-    padding: 10px;
-    width: 90%;
-    border-bottom: solid 6px #c8102e;
-    text-align: left;
-    outline: none;
-    font-size: 20px;
-    transition: 0.4s;
-    font-weight: bold;
-    margin-bottom: 7px;
-    margin-top: 7px;
-    border-radius: 3px;
+  background-image: linear-gradient(135deg, #041e42, #041e42, #c8102e, #c8102e);
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight: bold;
+  margin-bottom: 7px;
+  border-radius: 5px;
 }
 
 .panel {
