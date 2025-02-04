@@ -813,3 +813,87 @@
 
 </body>
 
+
+<script>
+  $(document).ready(function () {
+  // Highlight bottom nav links
+  var clickEvent = false;
+  $("#myCarousel")
+    .on("click", ".nav a", function () {
+      clickEvent = true;
+      $(this).parent().siblings().removeClass("active");
+      $(this).parent().addClass("active");
+    })
+    .on("slid.bs.carousel", function (e) {
+      if (!clickEvent) {
+        itemIndex = $(e.relatedTarget).index();
+        targetNavItem = $(".nav li[data-slide-to='" + itemIndex + "']");
+        $(".nav li").not(targetNavItem).removeClass("active");
+        targetNavItem.addClass("active");
+      }
+      clickEvent = false;
+    });
+});
+
+// Set the date we're counting down to
+var countDownDate = Date.parse("Mar 17, 2025 11:59:59");
+
+// Update the count down every 1 second
+var x = setInterval(function () {
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="days"
+  document.getElementById("days").innerHTML = days;
+
+  // Output the result in an element with id="hours"
+  document.getElementById("hours").innerHTML = hours;
+
+  // Output the result in an element with id="mins"
+  document.getElementById("mins").innerHTML = minutes;
+
+  // Output the result in an element with id="secs"
+  document.getElementById("secs").innerHTML = seconds;
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+$(document).scroll(function() {
+               var value=$(document).scrollTop();
+
+  if ( value >= 150 ) {
+        scrollTop.style.display = "block";
+    } else {
+        scrollTop.style.display = "none";
+    }
+});
+
+</script>
