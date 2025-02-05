@@ -1,0 +1,141 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Washington Capitals Seating Chart</title>
+
+    <!-- Style-->
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
+    <script src="https://use.typekit.net/ote6pql.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" type="text/css" href="https://washington-capitals.github.io/masterstyle-css.css">
+    <link type="text/css" rel="stylesheet" href="https://washington-capitals.github.io/seatingmap-css.css">
+    <script src="https://washington-capitals.github.io/resizer/iframeResizer.contentWindow.min.js"></script>
+
+ </head>
+
+
+<style>
+
+.section_color {
+    width: 6% !important;
+    background-size: cover;
+    line-height: 2.8rem;
+}
+	
+.MapSectionInfo div h1 {
+    width: 35%;
+}
+		
+.MapSectionInfo div p {
+    width: 58%;
+}
+	
+.MapSectionInfo div p span {
+    float: left;
+    width: 19%;
+    text-align: center;
+	padding:5px;
+}
+</style>
+	
+<body>
+<div class="mainSection">
+	
+  <div class="contentArea" id="MapChartHolder">
+
+ <div id="MapCanvasWrapper">
+      <img class="detailedImg" id="map_base" src="https://media.d3.nhle.com/image/private/t_document/prd/j1l7uzepe18xkabk0po9.png">
+      <img class="detailedImg" id="map_VIP" src="https://media.d3.nhle.com/image/private/t_document/prd/qk0jvhviwgpppb8zzlz2.png">
+      <img class="detailedImg" id="map_CenterCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/x6guvnzr1mu7jnu8bodd.png">
+      <img class="detailedImg" id="map_CenterAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/znxboyj238sjhc9ft5ff.png">
+      <img class="detailedImg" id="map_CenterDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/a2hatay6yywv4abpkwvf.png">
+    </div>
+
+            <div class="MapSectionInfo">
+                <h3>Select A Tier:</h3>
+ <p class="section_color">&nbsp;</p>
+                    <h1>&nbsp;</h1>
+                    <p class="prices">
+			<span class="_fullSeason">Season Ticket</span>
+                        <span class="_fullSeason">Round 1</span>
+                        <span class="_fullSeason">Round 2</span>
+                        <span class="_fullSeason">ECF</span>
+                        <span class="_halfSeason">SCF</span>
+                    </p>
+                    <div id="VIP" class="section">
+                        <p class="section_color" style="background-color: #fece02;color:#000000;">&nbsp;</p>
+                        <h1>VIP A</h1>
+                        <p class="prices">
+			    <span class="_fullSeason">$675</span>
+                            <span class="_fullSeason">$710</span>
+                            <span class="_fullSeason">$926</span>
+                            <span class="_fullSeason">$1,234</span>
+                            <span class="_halfSeason">$1,543</span>
+                        </p>
+                    </div>
+                    <div id="VIP" class="section">
+                        <p class="section_color" style="background-color: #fece02;">&nbsp;</p>
+                        <h1>VIP B</h1>
+                        <p class="prices">
+			    <span class="_fullSeason">$425</span>
+                            <span class="_fullSeason">$449</span>
+                            <span class="_fullSeason">$585</span>
+                            <span class="_fullSeason">$780</span>
+                            <span class="_halfSeason">$975</span>
+                        </p>
+                    </div>
+                    <div id="VIP" class="section">
+                        <p class="section_color" style="background-color: #fece02;">&nbsp;</p>
+                        <h1>VIP C</h1>
+                        <p class="prices">
+			    <span class="_fullSeason">$365</span>
+                            <span class="_fullSeason">$385</span>
+                            <span class="_fullSeason">$501</span>
+                            <span class="_fullSeason">$668</span>
+                            <span class="_halfSeason">$835</span>
+                        </p>
+                    </div>
+                    <div id="CenterCenter" class="section">
+                        <p class="section_color" style="background-color: #9d3594;">&nbsp;</p>
+                        <h1>Center Preferred : Center (D-T)</h1>
+                        <p class="prices">
+			    <span class="_fullSeason">$198</span>
+                            <span class="_fullSeason">$225</span>
+                            <span class="_fullSeason">$293</span>
+                            <span class="_fullSeason">$390</span>
+                            <span class="_halfSeason">$488</span>
+                        </p>
+                    </div>
+                </div>
+</div>
+</div>
+
+
+    <script src="https://washington-capitals.github.io/seatingmap.js"></script>
+
+    <script>
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+</body>
+</html>
