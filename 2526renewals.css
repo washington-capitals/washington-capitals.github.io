@@ -18,16 +18,17 @@
 }
 
 #scrollRenew {
-  display: block;
-  font-size: 2rem;
-  bottom: 0;
-  left: 40%;
-  width: 20%;
-  position: fixed;
-  cursor: pointer;
-  transition: 0.1s;
-  z-index: 1000;
-  text-align: center;
+    box-shadow: #336FD4 inset 0px 0px 10px 10px;
+    display: block;
+    font-size: 2rem;
+    bottom: 2%;
+    left: 2%;
+    width: 20%;
+    position: fixed;
+    cursor: pointer;
+    transition: 0.1s;
+    z-index: 1000;
+    text-align: center;
 }
 
 #scrollRenew:hover {
