@@ -130,19 +130,19 @@ li {
 
 @media screen and (max-width: 1000px) {
   .benefits-column {
-    width: 50%;
+    width: 50%!important;
   }
   .vip-column {
-    width: 100%;
+    width: 100%!important;
   }
   .half-column {
-    width: 100%;
+    width: 100%!important;
   }
 }
 
 @media screen and (max-width: 600px) {
   .benefits-column {
-    width: 100%;
+    width: 100%!important;
   }
 }
 
