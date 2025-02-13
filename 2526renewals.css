@@ -368,11 +368,11 @@ img.benefits {
   font-family: "refrigerator-deluxe", sans-serif;
 }
 .carousel .nav .active a {
-  color: #fff;
+  color: #fff!important;
 }
 
 .nav-pills > li.active > a {
-  color: #fff;
+  color: #fff!important;
   background-color: #c8102e !important;
 }
 
