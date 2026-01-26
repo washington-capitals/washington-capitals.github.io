@@ -13,7 +13,6 @@
 
     <style>
         .gallery img {
-            height: 600px;
             object-fit: cover;
         }
 
@@ -30,14 +29,21 @@
             margin-top: 4rem;
             margin-bottom: 0;
         }
+
+       @media (min-width: 1200px) {
+    .carousel .container {
+        max-width: 1920px;
+    }
+} 
     </style>
+    
     <script>
         $('.carousel').carousel({
             interval: 2000
         });
     </script>
 
-    <div class="container">
+    <div class="carousel container">
         <div id="carouselGallery" class="gallery carousel slide w-100" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselGallery" data-bs-slide-to="0" class="active"></button>
