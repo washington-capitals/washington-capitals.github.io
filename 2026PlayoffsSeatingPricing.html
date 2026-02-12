@@ -18,36 +18,58 @@
 
  </head>
 
-<body>
 
+<style>
+
+.section_color {
+    width: 6% !important;
+    background-size: cover;
+    line-height: 2.8rem;
+}
+	
+.MapSectionInfo div h1 {
+    width: 35%;
+}
+		
+.MapSectionInfo div p {
+    width: 58%;
+}
+	
+.MapSectionInfo div p span {
+    float: left;
+    width: 19%;
+    text-align: center;
+	padding:5px;
+}
+</style>
+	
+<body>
 <div class="mainSection">
 	
   <div class="contentArea" id="MapChartHolder">
 
-    <div id="MapCanvasWrapper">
-      <img class="detailedImg" id="map_base" src="https://media.d3.nhle.com/image/private/t_document/prd/hkn9fgiyeigaetamttbc.png">
-      <img class="detailedImg" id="map_vaults" src="https://media.d3.nhle.com/image/private/t_document/prd/tgwomx2rk29bb5wrhran.png">
-      <img class="detailedImg" id="map_VIPA" src="https://media.d3.nhle.com/image/private/t_document/prd/qewywtpiw39j9qwzggg4.png">
-      <img class="detailedImg" id="map_VIPB" src="https://media.d3.nhle.com/image/private/t_document/prd/lfs5ewqjtievwy6qykca.png">
-      <img class="detailedImg" id="map_VIPC" src="https://media.d3.nhle.com/image/private/t_document/prd/kwbv1lfrxsl1xzz7qgph.png">
-      <img class="detailedImg" id="map_VIPDH" src="https://media.d3.nhle.com/image/private/t_document/prd/bamidrrpvafamhidq21m.png">
-      <img class="detailedImg" id="map_CenterCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/qc1gegvaeql0veb6ny8v.png">
-      <img class="detailedImg" id="map_CenterAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/dtryh9ftiwogwhduwutw.png">
-      <img class="detailedImg" id="map_CenterDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/jqfdrtvmohb8wgldsb2l.png">
-      <img class="detailedImg" id="map_LowerAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/zdn43ewatidxbfi0jxim.png">
-      <img class="detailedImg" id="map_LowerDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/hkeh4qghpuu8ilekynsm.png">
-      <img class="detailedImg" id="map_LogeAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/fb07iegkkrka7f2gx9za.png">
-      <img class="detailedImg" id="map_LogeDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/zorutvmjkmmziwnfqeil.png">
-      <img class="detailedImg" id="map_200Center" src="https://media.d3.nhle.com/image/private/t_document/prd/azvsjb0tuvi36cdumhuz.png">
-      <img class="detailedImg" id="map_200Attack" src="https://media.d3.nhle.com/image/private/t_document/prd/chybftz7kmprdezcphut.png">
-      <img class="detailedImg" id="map_200Defend" src="https://media.d3.nhle.com/image/private/t_document/prd/pxbhluzugwjl4xiugtb1.png">
-      <img class="detailedImg" id="map_MezzCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/qgabdvmw4x8rrucxm7hp.png">
-      <img class="detailedImg" id="map_MezzEndAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/h665imj8vg2kxtaa0nla.png">
-      <img class="detailedImg" id="map_MezzEndDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/nwa0djkxwfuf8ptogzqe.png">
-      <img class="detailedImg" id="map_UltraClub" src="https://media.d3.nhle.com/image/private/t_document/prd/k5awrtpd088czzprpt0r.png">
+ <div id="MapCanvasWrapper">
+      <img class="detailedImg" id="map_base" src="https://media.d3.nhle.com/image/private/t_document/prd/m36bdrnvfnqpximcmqz8.png">
+      <img class="detailedImg" id="map_VIP" src="https://media.d3.nhle.com/image/private/t_document/prd/qk0jvhviwgpppb8zzlz2.png">
+      <img class="detailedImg" id="map_CenterCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/x6guvnzr1mu7jnu8bodd.png">
+      <img class="detailedImg" id="map_CenterAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/znxboyj238sjhc9ft5ff.png">
+      <img class="detailedImg" id="map_CenterDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/a2hatay6yywv4abpkwvf.png">
+      <img class="detailedImg" id="map_LowerAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/xblb3hpahq3ym6ztmpjc.png">
+      <img class="detailedImg" id="map_LowerDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/kjto67eb9wxabot8jstx.png">
+      <img class="detailedImg" id="map_LogeAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/vn2qhwjxecsbxkjiujea.png">
+      <img class="detailedImg" id="map_LogeDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/lk4mhxbqqqoqt6sfr7yq.png">
+      <img class="detailedImg" id="map_200Center" src="https://media.d3.nhle.com/image/private/t_document/prd/pjaewtb7uneif1ckebp7.png">
+      <img class="detailedImg" id="map_200Attack" src="https://media.d3.nhle.com/image/private/t_document/prd/dctgpxtpsimgk3tdq921.png">
+      <img class="detailedImg" id="map_200Defend" src="https://media.d3.nhle.com/image/private/t_document/prd/prpk4orom3laesdzwvmh.png">
+      <img class="detailedImg" id="map_MezzCenter" src="https://media.d3.nhle.com/image/private/t_document/prd/b3qmukazgq7vfurlai1s.png">
+      <img class="detailedImg" id="map_MezzEndAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/uzkq5d7wvkpqekdbcghk.png">
+      <img class="detailedImg" id="map_MezzEndDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/myj7norg1wgp3rctzubz.png">
+      <img class="detailedImg" id="map_MezzCornerAttack" src="https://media.d3.nhle.com/image/private/t_document/prd/dfbvn1lvnuej62qkl3im.png">
+      <img class="detailedImg" id="map_MezzCornerDefend" src="https://media.d3.nhle.com/image/private/t_document/prd/yzf2bzsx1ffzk1dxslyb.png">
+      <img class="detailedImg" id="map_UltraClub" src="https://media.d3.nhle.com/image/private/t_document/prd/okspzgzkyths6065nedb.png">
     </div>
 
-      <div class="MapSectionInfo">
+            <div class="MapSectionInfo">
                 <h3>Select A Tier:</h3>
                 <button class="accordion">
                     <h2>VIP</h2>
@@ -526,25 +548,25 @@
     </div>
 
 
-  <script src="https://washington-capitals.github.io/seatingmap.js"></script>
+    <script src="https://washington-capitals.github.io/seatingmap.js"></script>
 
-  <script>
+    <script>
 
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      
-      for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var panel = this.nextElementSibling;
-              if (panel.style.display === "block") {
-                  panel.style.display = "none";
-              } else {
-                  panel.style.display = "block";
-              }
-          });
-      }
-      </script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
 
 
 </body>
