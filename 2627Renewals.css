@@ -1,0 +1,666 @@
+.gallery img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.gallery .carousel-caption {
+  background-image: linear-gradient(0deg, #041e42, transparent);
+  width: 100%;
+  left: 0% !important;
+  bottom: 0 !important;
+  height: 40%;
+}
+
+.gallery .carousel-caption h4 {
+  text-shadow: #041e42 0 0 25px;
+  margin-top: 4rem;
+  margin-bottom: 0;
+}
+
+#scrollRenew {
+  box-shadow: #336fd4 inset 0px 0px 10px 10px;
+  font-size: 1.7rem;
+  bottom: 2%;
+  left: 2%;
+  position: fixed;
+  cursor: pointer;
+  transition: 0.1s;
+  z-index: 1000;
+}
+
+#scrollRenew:hover {
+  text-transform: underline;
+  font-weight: 900;
+}
+
+.slide-container.vidembed.globe:before {
+  background-image: none;
+}
+
+.slide-container.vidembed:before {
+  max-width: 1284px;
+  width: 100%;
+  height: 100%;
+  overflow-display: none;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 9),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0)
+  );
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/iydehjreqaxg4y5rmdon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: 5;
+  aspect-ratio: 16/9;
+}
+
+.slide-container.vidembed.halo:before {
+  max-width: 1284px;
+  width: 100%;
+  height: 100%;
+  overflow-display: none;
+  background-image: none;
+
+  aspect-ratio: 16/9;
+}
+
+.slide-container.vidembed {
+  position: relative;
+  max-height: fit-content;
+  min-height: min-content;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+
+.additional-content.front p,
+h4 {
+  margin: 5%;
+}
+
+p.statement {
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.seatmap {
+  width: 100%;
+}
+
+@media screen and (max-width: 700px) {
+  .seatmap {
+    aspect-ratio: 1/2 !important;
+  }
+}
+
+img.vip {
+  z-index: 2 !important;
+}
+
+ul.vip {
+  list-style: none;
+  padding: 0px;
+  line-height: 1.8em;
+}
+
+ul.vip ul {
+  list-style: none;
+  padding: 0 1.5em;
+  line-height: 1.8em;
+}
+
+ul.vip ul li:before {
+  content: "\2606";
+  margin: 0 1em; /* any design */
+}
+
+ul.vip li:before {
+  content: "\2605";
+  margin: 0 1em; /* any design */
+}
+
+.full-column {
+  float: left;
+  width: 100%;
+  padding: 1%;
+}
+
+.vip-column {
+  float: left;
+  width: 33%;
+  padding: 15px;
+  font-weight: 300;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.half-column {
+  float: left;
+  width: 50% !important;
+  font-weight: 300;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.benefits-column {
+  float: left;
+  width: 25%;
+  padding: 3%;
+  font-weight: bold;
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 1000px) {
+  .benefits-column {
+    width: 50% !important;
+  }
+  .vip-column {
+    width: 100% !important;
+  }
+  .half-column {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .benefits-column {
+    width: 100% !important;
+  }
+}
+
+.renewal-button {
+  background-color: #004bc9;
+  color: #fff;
+  border: 0px;
+  border-radius: 4px;
+  padding: 8px 50px;
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.benefits.row {
+  width: 100%;
+  margin: 0;
+}
+
+/*carousel*/
+
+.slide-container:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 1284px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  overflow-display: none;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 9),
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.2)
+  );
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/iydehjreqaxg4y5rmdon.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-height: 500px;
+}
+
+.carousel {
+  background: transparent;
+  max-width: 1284px;
+}
+
+.carousel .carousel-item {
+  height: auto;
+}
+
+.carousel-caption {
+  display: block;
+  width: 100%;
+  right: 0% !important;
+  left: 0% !important;
+  top: 50px;
+  max-height: 300px;
+}
+
+.carousel-caption,
+.carousel-caption p {
+  color: #fff;
+}
+
+.carousel-caption p {
+  font-family: refrigerator-deluxe;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+.carousel-caption h3 {
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-weight: 800;
+  padding: 12px 12px;
+  font-size: 8rem;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 40px #041e42, 0px 0px 50px #041e42;
+}
+
+@media (max-width: 900px) {
+  .slide-container:before {
+    overflow: hidden;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-overflow: hidden;
+  }
+}
+
+@media (max-width: 700px) {
+  .carousel-caption {
+    display: block;
+    width: 100%;
+    right: 0% !important;
+    left: 0% !important;
+    top: 5px;
+    max-height: 300px;
+  }
+
+  .carousel-caption h3 {
+    padding: 12px 12px;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  .carousel-caption p {
+    padding: 12px 12px;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .slide-container {
+    max-height: 500px;
+    overflow: hidden;
+  }
+}
+
+.additional-content {
+  background-color: white;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  color: #041e42;
+  text-align: center;
+}
+
+.additional-content.renew {
+  p {
+    font-size: 20px;
+  }
+  h1 {
+    font-family: "refrigerator-deluxe", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  h3 {
+    background-color: #041e42;
+    color: #ffffff;
+    padding: 4px 5%;
+    font-size: 4rem;
+  }
+}
+
+.additional-content.benefits {
+  h3 {
+    background-color: #041e42;
+    color: #ffffff;
+    padding: 4px 5%;
+    font-size: 4rem;
+  }
+}
+.additional-content h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.additional-content h3 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: "refrigerator-deluxe", sans-serif;
+  background-image: url(https://media.d3.nhle.com/image/private/t_document/prd/lbvtjx7lphktathqrrlh.png);
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-size: contain;
+  padding: 11px;
+  color: #c8102e;
+  text-align: left;
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .additional-content h3 {
+    background-image: none;
+    border-bottom: 15px double #c8102e;
+  }
+}
+
+.additional-content .iframe .video-js .vjs-title-bar {
+  display: none;
+}
+
+.carousel .carousel-item img {
+  max-width: 100%;
+  margin: 0 auto; /* Align slide image horizontally center in Bootstrap v3 */
+  position: relative;
+  z-index: -1;
+  display: block;
+}
+
+img.benefits {
+  z-index: 2 !important;
+}
+
+.carousel .nav {
+  background: #eee;
+}
+.carousel .nav a {
+  color: #041e42;
+  border-radius: 0;
+  font-size: 1.7rem;
+  padding: 10px 0px;
+  background: transparent;
+  font-weight: 430;
+  letter-spacing: 0.05rem;
+  font-family: "refrigerator-deluxe", sans-serif;
+}
+.carousel .nav .active a {
+  color: #fff !important;
+}
+
+.nav-pills > li.active > a {
+  color: #fff !important;
+  background-color: #c8102e !important;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #041e42 !important;
+  color: #ffffff;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+  color: #fff;
+  background-color: #004be9;
+}
+
+.nav-justified .nav-item {
+  -ms-flex-preferred-size: 0;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: center;
+  flex-basis: fit-content !important;
+}
+
+@media (max-width: 500px) {
+  .nav-justified .nav-item {
+    display: table-cell;
+    width: 100%;
+  }
+}
+
+.video-js {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
+picture.vjs-poster img {
+  z-index: 0 !important;
+}
+
+/*GLOBE CLUB & LOUNGE*/
+
+.half-column h4 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.carousel b {
+  font-weight: 800;
+}
+
+.row.halo {
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 4% 10%;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+}
+
+.row.vip {
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 4% 10%;
+    text-align: justify;
+    letter-spacing: 1px;
+  }
+
+  h4 {
+    font-family: refrigerator-deluxe, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 15px;
+  }
+}
+.club {
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/jq6jzcm3l0wc75aijf0l.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #041e42;
+}
+
+.halo {
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/ja2045ygjmqs07on0tdr.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #041e42;
+}
+
+.club h4 {
+  color: #c8102e;
+}
+
+.lounge {
+  background-image: url("https://media.d3.nhle.com/image/private/t_document/prd/xk1bu2qiqzesojctmkbd.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff !important;
+}
+
+.lounge h4 {
+  color: #e0e0e0;
+}
+
+/*countdown clock*/
+
+body {
+  background-color: transparent;
+  width: 100%;
+}
+
+h1,
+h2 {
+  letter-spacing: 0.03em;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.clock-container {
+  background-color: #041e42;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 1284px;
+  width: 100%;
+  min-height: 125px;
+}
+
+.column {
+  width: 25%;
+  float: left;
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "refrigerator-deluxe", sans-serif;
+  color: #fff;
+  line-height: 3rem;
+}
+
+.left-column {
+  width: 33%;
+  float: left;
+  position: relative;
+  text-align: left;
+}
+
+@media screen and (max-width: 800px) {
+  .left-column {
+    width: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+  }
+}
+
+.middle-column {
+  padding-top: 10px;
+  width: 33%;
+  float: left;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .middle-column {
+    text-align: center;
+    width: 100%;
+    float: left;
+    position: relative;
+    padding-bottom: 20px;
+  }
+}
+
+.middle-column p {
+  font-size: 5rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+.right-column {
+  width: 33%;
+  float: right;
+  position: relative;
+  text-align: right;
+}
+
+.right-column h1 {
+  font-size: 2.5rem;
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-weight: 600;
+  color: #c8102e;
+}
+
+@media screen and (max-width: 800px) {
+  .right-column {
+    text-align: center;
+    width: 100%;
+    float: left;
+    position: relative;
+  }
+}
+
+.right-column p {
+  color: #fff;
+  letter-spacing: 0.1em;
+  font-family: "refrigerator-deluxe", sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+/*accordion*/
+.accordion {
+  background-image: linear-gradient(135deg, #041e42, #041e42, #c8102e, #c8102e);
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight: bold;
+  margin-bottom: 7px;
+  border-radius: 5px;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.directory {
+  width: 100%;
+}
+
+tr td:first-child {
+  width: 60%;
+  text-align: left;
+}
+
+tr td:last-child {
+  text-align: right;
+}
+
+table a {
+  text-decoration: underline 4px #dadde3;
+  font-weight: bold;
+}
