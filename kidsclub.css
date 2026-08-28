@@ -533,7 +533,7 @@ th,
 td {
     text-align: center;
     padding: 12px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 th {
@@ -807,7 +807,7 @@ input[type="reset"] {
 .accordion span::before {
     content: '\002B';
     margin-left: 5px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: "Snicker", sans-serif;
     font-weight: 00;
 }
@@ -821,7 +821,7 @@ input[type="reset"] {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     max-height: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .panel p,
