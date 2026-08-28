@@ -521,7 +521,7 @@ a.button-white:hover {
 /* Table */
 /* Style the table */
 table {
-    width: 80%;
+    width: 100%;
     border: 1px solid #ddd;
     border-radius: 20px;
     border-collapse: separate;
