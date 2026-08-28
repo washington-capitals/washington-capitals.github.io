@@ -225,11 +225,11 @@ a.button-white:hover{
     max-width: 1250px;
     display:flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction:column;
     gap: 24px;
 }
 .responsive-two-columns{
-    width:100%;
+    width:100% !important;
 }
 .two-column-gap{
     display: flex;
@@ -790,7 +790,7 @@ footer li a{
 }
 
 /* tablet breakpoint */
-@media (min-width:768px) {
+@media screen and (width >= 768px) {
     .responsive-four-columns {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -826,7 +826,7 @@ footer li a{
 
 
 /*Stying for small screens*/
-@media screen and (max-width: 767px){
+@media screen and (width <= 767px){
     .two-column-flip{
         order: 1;
     }
