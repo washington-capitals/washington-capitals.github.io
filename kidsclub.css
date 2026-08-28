@@ -262,7 +262,7 @@ a.button-white:hover {
     max-width: 1250px;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-wrap:wrap;
     gap: 24px;
 }
 
