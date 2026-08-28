@@ -616,66 +616,6 @@ footer.section{
     max-width: 80%;
     margin-top: -70px;
 }
-/* Dog of the month */
-.dotm .section{
-    gap: 20px;
-}
-.dotm-date{
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--orange);
-}
-.dotm hr{
-    width: 50px;
-    border-color: var(--navy);
-    margin: 18px auto;
-}
-.dotm .med-heading {
-    background: url(https://static.clubs.nfl.com/image/upload/v1710948139/browns/cv5ub2np8bhpiq7zc4sp.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 16px;
-    color: white;
-    transform: rotate(2deg);
-}
-
-.logos {
-  overflow: hidden;
-  white-space: nowrap;
-  position: relative;
-  width: 100vw;
-}
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
-.logos-slide {
-  display: inline-block;
-  animation: 60s slide infinite linear;
-  padding: 30px 0;
-}
-.logos-slide .slide:nth-child(even){
-    transform: rotate(-2deg);
-}
-.logos-slide .slide:nth-child(odd){
-    transform: rotate(2deg);
-}
-.logos-slide .slide {
-    display: inline-block;
-    width: 250px;
-    margin: 0 30px;
-    background-color: var(--white);
-    border-radius: 4px;
-    padding: 16px;
-    box-shadow: var(--box-shadow);
-}
-.slide p{
-    text-align: center;
-    line-height: 0;
-    margin-top: 20px;
-}
-
 /* Navigation */
 header {
     display: flex;
