@@ -888,7 +888,6 @@ footer li a {
     .responsive-two-columns {
         width: 100%;
     }
-
     .cta .two-column-container>div:first-child {
         order: 1;
     }
