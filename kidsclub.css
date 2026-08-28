@@ -37,11 +37,11 @@ h3{
     margin: 0;
 }
 h1{
-    font-size: calc(48px + 0.390625vw);
+    font-size: calc(48px + 1vw);
     color: var(--white);
 }
 h2{
-    font-size: calc(40px + 0.390625vw);
+    font-size: calc(40px + 1vw);
     color: var(--navy);
 }
 ul.no-style{
@@ -63,12 +63,12 @@ ul.no-style a{
     font-family: "proxima-nova", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: calc(28px + 0.390625vw);
+    font-size: calc(28px + 1vw);
     text-transform: uppercase;
 }
 .small-heading{
     font-family: "Proxima-Nova", sans-serif;
-    font-size: calc(18px + 0.390625vw);
+    font-size: calc(18px + 1vw);
     text-transform: uppercase;
     color: var(--orange);
     line-height: 1em;
@@ -80,12 +80,12 @@ td,
 a,
 button,
 summary{
-    font-size: calc(14px + 0.390625vw);
+    font-size: calc(14px + 1vw);
     font-family: "proxima-nova", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    line-height: 1.5em;
+    line-height: 1em;
     margin: 8px 0;
 }
 .material-symbols-rounded{
@@ -481,33 +481,14 @@ margin-left:30px;
 }
 .event-title{
     font-weight: 700;
-    font-size: calc(18px + 0.390625vw);
+    font-size: calc(18px + 1vw);
 }
 .event-date{
     margin-bottom: 8px;
     font-weight: 300;
-    font-size: calc(12px + 0.390625vw);
-}
-.custom-shape-divider-bottom-1714751223 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+    font-size: calc(12px + 1vw);
 }
 
-.custom-shape-divider-bottom-1714751223 svg {
-    position: relative;
-    display: block;
-    width: calc(284% + 1.3px);
-    height: 37px;
-}
-
-.custom-shape-divider-bottom-1714751223 .shape-fill {
-    fill: #c8102e;
-}
 /* Why Join Premium Section Styling */
 .upgrade{
     position: relative;
