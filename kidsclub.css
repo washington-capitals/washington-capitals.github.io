@@ -698,9 +698,7 @@ nav{
     transition: all 0.3s ease;
     border-radius: 50px;
 }
-.hamburger{
-    display: none;
-}
+
 
 /*Animating Hamburger Icon on Click*/
 .toggle .line1{
@@ -791,6 +789,12 @@ footer li a{
 
 /* tablet breakpoint */
 @media screen and (width >= 768px) {
+
+	.hamburger{
+    display: none;
+}
+
+	
     .responsive-four-columns {
         grid-template-columns: repeat(4, 1fr);
     }
