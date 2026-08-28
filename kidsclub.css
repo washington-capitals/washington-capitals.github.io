@@ -155,6 +155,10 @@ img {
     padding: 20px 16px;
 }
 
+.site-padding-color-bg {
+    padding: 50px 16px;
+}
+
 .container-margin {
     margin: 5.6rem 0;
 }
