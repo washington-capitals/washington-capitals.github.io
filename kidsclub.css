@@ -516,7 +516,7 @@ table {
 th, td {
   text-align: center;
   padding: 12px;
-  font-size:1.2rem;
+  font-size:2rem;
 }
 th{
     background-color: var(--white);
