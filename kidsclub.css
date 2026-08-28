@@ -826,7 +826,7 @@ footer li a{
 
 
 /*Stying for small screens*/
-@media screen and (max-width: 800px){
+@media screen and (max-width: 767px){
     .two-column-flip{
         order: 1;
     }
@@ -839,6 +839,10 @@ footer li a{
     .cta img{
         max-width: 100%;
     }
+
+.responsive-two-columns{
+    width:100%;
+} 
     .cta .two-column-container > div:first-child{
         order: 1;
     }
