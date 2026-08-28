@@ -765,7 +765,6 @@ nav {
     box-shadow: var(--box-shadow);
     background-color: var(--white);
     border-radius: 20px;
-    padding: 2rem 3rem;
 }
 
 .faq {
