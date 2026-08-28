@@ -513,7 +513,7 @@ a.button-white:hover {
 /* Table */
 /* Style the table */
 table {
-    width: 100%;
+    width: 80%;
     border: 1px solid #ddd;
     border-radius: 20px;
     border-collapse: separate;
