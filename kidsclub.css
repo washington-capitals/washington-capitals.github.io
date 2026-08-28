@@ -688,103 +688,6 @@ nav{
     transition: all ease-in-out 350ms;
 }
 
-/*Styling Hamburger Icon*/
-.hamburger div{
-    width: 30px;
-    height:3px;
-    background: #f2f5f7;
-    margin: 5px;
-    transition: all 0.3s ease;
-    border-radius: 50px;
-}
-.hamburger{
-    display: none;
-}
-
-/*Animating Hamburger Icon on Click*/
-.toggle .line1{
-    transform: rotate(-45deg) translate(-5px,6px);
-}
-.toggle .line2{
-    transition: all 0.7s ease;
-    width:0;
-}
-.toggle .line3{
-    transform: rotate(45deg) translate(-5px,-6px);
-}
-
-.scroll-container {
-  height: 100vh;
-}
-/* FAQs */
-.faqs {
-    position: relative;
-}
-.faqs.section{
-    gap: 20px;
-}
-.faq-container{
-    max-width: 1000px;
-    box-shadow: var(--box-shadow);
-    background-color: var(--white);
-    border-radius: 20px;
-    padding: 2rem 3rem;
-}
-.faq{
-    border-bottom: 1px solid var(--grey);
-    padding: 16px 0;
-}
-.faq-container div:last-child {
-  border: 0;
-}
-.accordion {
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    transition: 0.4s;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-}
-.accordion button, input[type="submit"], input[type="reset"] {
-	background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	cursor: pointer;
-    text-align: left;
-}  
-.active,
-.accordion:hover {
-    color: var(--red);
-}
-.accordion span::before{
-    content: '\002B';
-    margin-left: 5px;
-    font-size: 1.4rem;
-    font-family: "Snicker", sans-serif;
-    font-weight: 00;
-}
-.active span::before {
-    content: "\2212";
-}
-    
-    .panel {
-        background-color: var(--white);
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        max-height: 0;
-      font-size:1.4rem;
-    }
-.panel p,
-.panel a,
-footer li a{
-    font-weight: 300;
-}
-.faqs dd a{
-    color: var(--red);
-}
 /* tablet breakpoint */
 @media (min-width:768px) {
     .responsive-four-columns {
@@ -906,4 +809,103 @@ footer li a{
     li.fade{
         opacity: 1;
     }
+}
+
+
+/*Styling Hamburger Icon*/
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+    border-radius: 50px;
+}
+.hamburger{
+    display: none;
+}
+
+/*Animating Hamburger Icon on Click*/
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    transition: all 0.7s ease;
+    width:0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.scroll-container {
+  height: 100vh;
+}
+/* FAQs */
+.faqs {
+    position: relative;
+}
+.faqs.section{
+    gap: 20px;
+}
+.faq-container{
+    max-width: 1000px;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+}
+.faq{
+    border-bottom: 1px solid var(--grey);
+    padding: 16px 0;
+}
+.faq-container div:last-child {
+  border: 0;
+}
+.accordion {
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.accordion button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+    text-align: left;
+}  
+.active,
+.accordion:hover {
+    color: var(--red);
+}
+.accordion span::before{
+    content: '\002B';
+    margin-left: 5px;
+    font-size: 1.4rem;
+    font-family: "Snicker", sans-serif;
+    font-weight: 00;
+}
+.active span::before {
+    content: "\2212";
+}
+    
+    .panel {
+        background-color: var(--white);
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        max-height: 0;
+      font-size:1.4rem;
+    }
+.panel p,
+.panel a,
+footer li a{
+    font-weight: 300;
+}
+.faqs dd a{
+    color: var(--red);
 }
