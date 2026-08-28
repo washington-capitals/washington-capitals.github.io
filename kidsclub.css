@@ -398,9 +398,6 @@ a.button-white:hover {
     color: var(--red);
 }
 
-.price td ul{
-    list-style-type:"★";
-}
 
 .price-3 ul li p::before {
     color: var(--navy);
