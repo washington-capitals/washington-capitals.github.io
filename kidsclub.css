@@ -836,9 +836,10 @@ footer li a {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .two-column-container {
-        gap: 56px;
-    }
+.two-column-container {
+    flex-wrap: nowrap;
+    gap: 56px;
+}
 
     .responsive-two-columns {
         width: 50%;
